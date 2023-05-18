@@ -1,8 +1,13 @@
 # 3.3.-mongo-replicated
 
-# Virtual Laboratory
+# Virtual Laboratory README
 
-This repository contains the code and documentation for the virtual laboratory assignment.
+This repository contains the configuration and setup for a MongoDB replica set using Docker.
+
+## Overview
+
+This repository aims to demonstrate the setup of a basic MongoDB replica set with two nodes: a primary and a secondary node. This setup allows for high availability and fault tolerance by replicating data across multiple nodes.
+
 
 ## Services and Tools Used
 
