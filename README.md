@@ -41,6 +41,7 @@ It is a standard Python library for creating GUI (Graphical User Interface) appl
 - `README.md`: This README file.
 - `docker-compose.yml`: The configuration file for the Docker services.
 - `main.py`: The Python code for connecting to the MongoDB replica set.
+- `requirements.txt`: Required Packages.
 
 ## Files
 
