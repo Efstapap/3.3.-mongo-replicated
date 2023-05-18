@@ -42,14 +42,13 @@ It is a standard Python library for creating GUI (Graphical User Interface) appl
 - `main.py`: The Python code for connecting to the MongoDB replica set.
 - `INSTALL.md`: Installation instructions for the virtual laboratory.
 
-## Installation
+## Files
 
-Follow the steps below to set up the virtual laboratory:
+- `main.py`: This file contains the main script of the virtual laboratory. It establishes a connection to a MongoDB replica set and performs various operations on the primary and secondary nodes.
 
-1. Install Docker on your machine. Instructions can be found at [Docker Installation Guide](https://docs.docker.com/get-docker/).
-2. Clone this repository to your local machine.
-3. Open a terminal and navigate to the repository directory.
-4. Run the following command to start the Docker services:
-
-   ```bash
-   yarn up
+  Here are some key points about the `main.py` file:
+  - It utilizes the `pymongo` library to interact with MongoDB.
+  - It establishes a connection to the MongoDB replica set using the specified connection string.
+  - It performs an insert operation, read operations, and a delete operation on the primary node.
+  - It demonstrates reading from the secondary node after a deletion with a delay.
+  - It displays the results in a GUI created with Tkinter.
