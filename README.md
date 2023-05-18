@@ -53,11 +53,9 @@ ReadPreference.SECONDARY is used to specify that the read operations should be d
 It is a class from the pymongo library that specifies the write concern options for MongoDB operations. In our code, w=1 is used to ensure that write operations are acknowledged by the primary node.
 
 ## Repository Structure
-
-- `assignment.adoc`: The main text of the assignment in AsciiDoc format.
-- `main.py`: The Python code for connecting to the MongoDB replica set.
-- `yarn.yml`: The configuration file for the Docker services.
 - `README.md`: This README file.
+- `docker-compose.yml`: The configuration file for the Docker services.
+- `main.py`: The Python code for connecting to the MongoDB replica set.
 - `INSTALL.md`: Installation instructions for the virtual laboratory.
 
 ## Installation
