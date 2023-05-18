@@ -43,10 +43,10 @@ To install and set up the virtual laboratory, follow these steps:
      ```
      docker ps
      mongo --port 30001
-     "rs.status()"
+     rs.status()
      ```
    
-   This command will connect to the primary node and display the status of the replica set.
+   These commands will connect to the primary node and display the status of the replica set.
 
 5. Run the Virtual Laboratory:
    - You are now ready to run the virtual laboratory. Execute the following command to start the main script:
