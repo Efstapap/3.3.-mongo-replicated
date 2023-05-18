@@ -70,15 +70,5 @@ To install and set up the virtual laboratory, follow these steps:
 
 If you need to customize any configuration settings, you can modify the `docker-compose.yml` file and the `main.py` script according to your requirements.
 
-## Troubleshooting
 
-If you encounter any issues during the installation or usage of the virtual laboratory, refer to the project's documentation or check for any error messages in the terminal or command prompt.
-
-## Contributing
-
-If you would like to contribute to the virtual laboratory project, please follow the guidelines outlined in the project's README file. Contributions such as bug fixes, feature enhancements, and documentation improvements are welcome.
-
-## License
-
-[Specify the license under which the virtual laboratory project is distributed]
 
