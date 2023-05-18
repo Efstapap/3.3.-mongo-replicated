@@ -31,26 +31,10 @@ In this virtual laboratory, volumes are used to provide persistent data storage 
 
 - `datadb02`: This volume is mounted to the `/data/db` directory within the `db02` container, ensuring that the data for the secondary node is stored persistently.
 
-### pymongo
-
-It is a Python driver for MongoDB. It provides an interface for interacting with MongoDB from Python.
-
 ### Tkinter
 
 It is a standard Python library for creating GUI (Graphical User Interface) applications. In this code, Tkinter is used to create a window and display the results of MongoDB operations.
 
-### MongoClient
-
-It is a class from the pymongo library that represents a MongoDB client. It is used to establish a connection to the MongoDB replica set using the specified connection string.
-
-### ReadPreference
-
-It is an enumeration from the pymongo library that defines the read preference mode for MongoDB operations. In our code,
-ReadPreference.SECONDARY is used to specify that the read operations should be directed to secondary nodes of the replica set.
-
-### WriteConcern
-
-It is a class from the pymongo library that specifies the write concern options for MongoDB operations. In our code, w=1 is used to ensure that write operations are acknowledged by the primary node.
 
 ## Repository Structure
 - `README.md`: This README file.
