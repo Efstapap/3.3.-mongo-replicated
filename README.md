@@ -15,6 +15,43 @@ This repository aims to demonstrate the setup of a basic MongoDB replica set wit
 
 Docker is used to containerize the MongoDB instances and facilitate easy deployment and management. It provides a lightweight and isolated environment for running the replica set nodes.
 
+### MongoDB
+
+MongoDB is a popular NoSQL database that offers high performance, scalability, and flexibility. In this virtual laboratory, we utilize the MongoDB database to create a replica set.
+
+### Docker Compose
+
+Docker Compose is a tool for defining and running multi-container Docker applications. It allows us to define the replica set configuration and easily spin up the required containers with a single command.
+
+### Volumes
+
+In this virtual laboratory, volumes are used to provide persistent data storage for the MongoDB replica set. The following volumes are defined:
+
+- `datadb01`: This volume is mounted to the `/data/db` directory within the `db01` container, ensuring that the data for the primary node is stored persistently.
+
+- `datadb02`: This volume is mounted to the `/data/db` directory within the `db02` container, ensuring that the data for the secondary node is stored persistently.
+
+### pymongo
+
+It is a Python driver for MongoDB. It provides an interface for interacting with MongoDB from Python.
+
+### Tkinter
+
+It is a standard Python library for creating GUI (Graphical User Interface) applications. In this code, Tkinter is used to create a window and display the results of MongoDB operations.
+
+### MongoClient
+
+It is a class from the pymongo library that represents a MongoDB client. It is used to establish a connection to the MongoDB replica set using the specified connection string.
+
+### ReadPreference
+
+It is an enumeration from the pymongo library that defines the read preference mode for MongoDB operations. In our code,
+ReadPreference.SECONDARY is used to specify that the read operations should be directed to secondary nodes of the replica set.
+
+### WriteConcern
+
+It is a class from the pymongo library that specifies the write concern options for MongoDB operations. In our code, w=1 is used to ensure that write operations are acknowledged by the primary node.
+
 ## Repository Structure
 
 - `assignment.adoc`: The main text of the assignment in AsciiDoc format.
