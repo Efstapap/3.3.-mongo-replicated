@@ -37,10 +37,10 @@ It is a standard Python library for creating GUI (Graphical User Interface) appl
 
 
 ## Repository Structure
+- `INSTALL.md`: Installation instructions for the virtual laboratory.
 - `README.md`: This README file.
 - `docker-compose.yml`: The configuration file for the Docker services.
 - `main.py`: The Python code for connecting to the MongoDB replica set.
-- `INSTALL.md`: Installation instructions for the virtual laboratory.
 
 ## Files
 
