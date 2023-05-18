@@ -11,8 +11,9 @@ This repository aims to demonstrate the setup of a basic MongoDB replica set wit
 
 ## Services and Tools Used
 
-- MongoDB Replica Set
-- Docker
+### Docker
+
+Docker is used to containerize the MongoDB instances and facilitate easy deployment and management. It provides a lightweight and isolated environment for running the replica set nodes.
 
 ## Repository Structure
 
