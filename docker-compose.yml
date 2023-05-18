@@ -1,0 +1,25 @@
+version: '3'
+services:
+  db01:
+    image: mongo:3.0
+    volumes:
+    - datadb01:/data/db
+    - ./etc/mongod.conf:/etc/mongod.conf
+    ports:
+    - "30001:30001"
+    command: ["mongod", "--config", "/etc/mongod.conf", "--port","30001"]
+    container_name: db01
+
+  db02:
+    image: mongo:3.0
+    volumes:
+    - datadb02:/data/db
+    - ./etc/mongod.conf:/etc/mongod.conf
+    ports:
+    - "30002:30002"
+    command: ["mongod", "--config", "/etc/mongod.conf", "--port","30002"]
+    container_name: db02
+ 
+volumes:
+  datadb01:
+  datadb02:
