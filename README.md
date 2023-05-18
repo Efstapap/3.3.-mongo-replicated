@@ -52,3 +52,12 @@ It is a standard Python library for creating GUI (Graphical User Interface) appl
   - It performs an insert operation, read operations, and a delete operation on the primary node.
   - It demonstrates reading from the secondary node after a deletion with a delay.
   - It displays the results in a GUI created with Tkinter.
+
+- `docker-compose.yml`: This file defines the Docker services for the virtual laboratory. It specifies the MongoDB version, volumes, ports, and container names for the primary and secondary nodes.
+
+  Here are some key points about the `docker-compose.yml` file:
+  - It defines two services: `db01` and `db02`, representing the primary and secondary nodes respectively.
+  - Each service uses the `mongo:3.0` image.
+  - Volumes are mounted to store the MongoDB data and configuration files.
+  - Ports are exposed to allow communication with the primary and secondary nodes.
+  - The `command` specifies the configuration and port settings for each node.
