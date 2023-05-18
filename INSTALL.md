@@ -38,10 +38,12 @@ To install and set up the virtual laboratory, follow these steps:
    This command will build and start the Docker containers defined in the `docker-compose.yml` file. It will set up the MongoDB replica set with a primary and secondary node.
 
 4. Verify the Installation:
-   - After the Docker containers are up and running, you can check the status of the MongoDB replica set by running the following command:
+   - After the Docker containers are up and running, you can check the status of the MongoDB replica set by running the following commands:
    
      ```
-     docker-compose exec db01 mongo --port 30001 --eval "rs.status()"
+     docker ps
+     mongo --port 30001
+     "rs.status()"
      ```
    
    This command will connect to the primary node and display the status of the replica set.
