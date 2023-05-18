@@ -27,8 +27,19 @@ To install and set up the virtual laboratory, follow these steps:
      ```
      cd <repository_directory>
      ```
+3. Install Required Packages:
+   - Before running the virtual laboratory, make sure you have the necessary Python packages installed. You can install them using `pip`, the Python package manager.
+   - Open a terminal or command prompt.
+   - Change to the project directory.
+   - Run the following command to install the required packages:
 
-3. Run Docker Compose:
+     ```
+     pip install -r requirements.txt
+     ```
+     
+   This command will install all the packages listed in the `requirements.txt` file, ensuring that you have the required dependencies.
+
+4. Run Docker Compose:
    - Execute the following command to start the virtual laboratory services:
    
      ```
